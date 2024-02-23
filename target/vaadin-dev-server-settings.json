@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/DanielScharrer/Documents/Development/Vaadin/Vaadin Fusion - Hilla/hilla-crm/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/DanielScharrer/Documents/Development/Vaadin/Vaadin Fusion - Hilla/hilla-crm/frontend/generated/jar-resources",
+  "staticOutput": "C:/Users/DanielScharrer/Documents/Development/Vaadin/Vaadin Fusion - Hilla/hilla-crm/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Users/DanielScharrer/Documents/Development/Vaadin/Vaadin Fusion - Hilla/hilla-crm/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/DanielScharrer/Documents/Development/Vaadin/Vaadin Fusion - Hilla/hilla-crm/target/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/DanielScharrer/Documents/Development/Vaadin/Vaadin Fusion - Hilla/hilla-crm/frontend/generated/jar-resources",
+  "themeName": "hilla-crm",
+  "clientServiceWorkerSource": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}

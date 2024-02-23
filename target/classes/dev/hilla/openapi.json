@@ -1,0 +1,208 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Hilla Application",
+    "version" : "1.0.0"
+  },
+  "servers" : [
+    {
+      "url" : "http://localhost:8080/connect",
+      "description" : "Hilla Backend"
+    }
+  ],
+  "tags" : [
+    {
+      "name" : "CRMService",
+      "x-class-name" : "com.example.application.services.CRMService"
+    }
+  ],
+  "paths" : {
+    "/CRMService/findAllCompanies" : {
+      "post" : {
+        "tags" : [
+          "CRMService"
+        ],
+        "operationId" : "CRMService_findAllCompanies_POST",
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "anyOf" : [
+                      {
+                        "$ref" : "#/components/schemas/com.example.application.services.CRMService$CompanyRecord"
+                      }
+                    ]
+                  },
+                  "x-java-type" : "java.util.List"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/CRMService/findAllContacts" : {
+      "post" : {
+        "tags" : [
+          "CRMService"
+        ],
+        "operationId" : "CRMService_findAllContacts_POST",
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "anyOf" : [
+                      {
+                        "$ref" : "#/components/schemas/com.example.application.services.CRMService$ContactRecord"
+                      }
+                    ]
+                  },
+                  "x-java-type" : "java.util.List"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/CRMService/save" : {
+      "post" : {
+        "tags" : [
+          "CRMService"
+        ],
+        "operationId" : "CRMService_save_POST",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "contact" : {
+                    "anyOf" : [
+                      {
+                        "$ref" : "#/components/schemas/com.example.application.services.CRMService$ContactRecord"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "anyOf" : [
+                    {
+                      "$ref" : "#/components/schemas/com.example.application.services.CRMService$ContactRecord"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "com.example.application.services.CRMService$CompanyRecord" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "format" : "int64",
+            "x-validation-constraints" : [
+              {
+                "simpleName" : "NotNull"
+              }
+            ],
+            "x-java-type" : "java.lang.Long"
+          },
+          "name" : {
+            "type" : "string",
+            "x-java-type" : "java.lang.String"
+          }
+        }
+      },
+      "com.example.application.services.CRMService$ContactRecord" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer",
+            "format" : "int64",
+            "x-java-type" : "java.lang.Long"
+          },
+          "firstName" : {
+            "type" : "string",
+            "x-validation-constraints" : [
+              {
+                "simpleName" : "NotNull"
+              },
+              {
+                "attributes" : {
+                  "min" : 1,
+                  "max" : 50
+                },
+                "simpleName" : "Size"
+              }
+            ],
+            "x-java-type" : "java.lang.String"
+          },
+          "lastName" : {
+            "type" : "string",
+            "x-validation-constraints" : [
+              {
+                "simpleName" : "NotNull"
+              },
+              {
+                "attributes" : {
+                  "min" : 1,
+                  "max" : 50
+                },
+                "simpleName" : "Size"
+              }
+            ],
+            "x-java-type" : "java.lang.String"
+          },
+          "email" : {
+            "type" : "string",
+            "x-validation-constraints" : [
+              {
+                "simpleName" : "NotNull"
+              },
+              {
+                "simpleName" : "Email"
+              }
+            ],
+            "x-java-type" : "java.lang.String"
+          },
+          "company" : {
+            "anyOf" : [
+              {
+                "$ref" : "#/components/schemas/com.example.application.services.CRMService$CompanyRecord"
+              }
+            ],
+            "x-validation-constraints" : [
+              {
+                "simpleName" : "NotNull"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

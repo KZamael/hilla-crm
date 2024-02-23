@@ -1,0 +1,17 @@
+{
+  "productionMode": false,
+  "eagerServerLoad": false,
+  "npmFolder": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm",
+  "node.version": "v20.10.0",
+  "node.download.root": "https://nodejs.org/dist/",
+  "frontendFolder": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\frontend",
+  "connect.javaSourceFolder": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\src\\main\\java",
+  "javaResourceFolder": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\src\\main\\resources",
+  "connect.applicationProperties": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\src\\main\\resources\\application.properties",
+  "connect.openApiFile": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\target\\generated-resources\\openapi.json",
+  "project.frontend.generated": "C:\\Users\\DanielScharrer\\Documents\\Development\\Vaadin\\Vaadin Fusion - Hilla\\hilla-crm\\frontend\\generated",
+  "pnpm.enable": false,
+  "bun.enable": false,
+  "require.home.node": false,
+  "build.folder": "target"
+}

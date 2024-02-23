@@ -1,0 +1,12 @@
+com\example\application\data\repository\CompanyRepository.class
+com\example\application\Application.class
+com\example\application\data\AbstractEntity.class
+com\example\application\services\CRMService$ContactRecord.class
+com\example\application\data\entity\Contact.class
+com\example\application\services\CRMService$CompanyRecord.class
+com\example\application\services\package-info.class
+com\example\application\services\CRMService.class
+com\example\application\data\entity\Company.class
+com\example\application\data\constants\DataEntityConstants.class
+com\example\application\data\repository\ContactRepository.class
+com\example\application\data\package-info.class
